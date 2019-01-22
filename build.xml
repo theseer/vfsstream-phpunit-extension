@@ -27,7 +27,7 @@
         <copy todir="${basedir}/build" file="${basedir}/LICENSE" />
         <copy tofile="${basedir}/build/manifest.xml" file="${basedir}/manifest.xml.in" />
         <replace file="${basedir}/build/manifest.xml" token="@@version@@" value="${version}"/>
-        <copy todir="${basedir}/build/phpunit-example-extension">
+        <copy todir="${basedir}/build/vfsstream-phpunit-extension">
             <fileset dir="${basedir}/vendor/mikey179/vfsStream/src">
                 <include name="**/*" />
             </fileset>
@@ -39,14 +39,14 @@
             <arg value="--once" />
             <arg value="--phar" />
             <arg value="--output" />
-            <arg path="${basedir}/build/phpunit-example-extension-${version}.phar" />
+            <arg path="${basedir}/build/vfsstream-phpunit-extension-${version}.phar" />
             <arg path="${basedir}/build" />
         </exec>
 
         <delete includeemptydirs="true">
             <fileset dir="${basedir}/build">
                 <include name="**/*"/>
-                <exclude name="phpunit-example-extension-${version}.phar"/>
+                <exclude name="vfsstream-phpunit-extension-${version}.phar"/>
             </fileset>
         </delete>
 

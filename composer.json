@@ -1,5 +1,5 @@
 {
     "require": {
-        "mikey179/vfsStream": "^1.6"
+        "mikey179/vfsStream": "dev-master"
     }
 }

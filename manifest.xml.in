@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <phar xmlns="https://phar.io/xml/manifest/1.0">
     <contains name="theseer/vfsStream-phpunit-extension" version="@@version@@" type="extension">
-        <extension for="phpunit/phpunit" compatible="^7"/>
+        <extension for="phpunit/phpunit" compatible="^7.0"/>
     </contains>
 
     <copyright>
