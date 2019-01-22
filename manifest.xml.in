@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phar xmlns="https://phar.io/xml/manifest/1.0">
+    <contains name="theseer/vfsStream-phpunit-extension" version="@@version@@" type="extension">
+        <extension for="phpunit/phpunit" compatible="^7"/>
+    </contains>
+
+    <copyright>
+        <author name="Arne Blankerts" email="arne@phar.io"/>
+        <license type="BSD-3-Clause" url="https://github.com/theseer/vfsStream-phpunit-extension"/>
+    </copyright>
+
+    <requires>
+        <php version="^7.1"/>
+    </requires>
+</phar>
